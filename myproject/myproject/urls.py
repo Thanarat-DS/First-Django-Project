@@ -22,4 +22,8 @@ from demoapp import views
 urlpatterns = [ 
     path('admin/', admin.site.urls), 
     path('hello', views.hello, name = 'hello'),
+    path('getuser/<name>/<id>', views.pathview, name='pathview'),
+    path('getuser/', views.qryview, name='qryview'),
+    path("showform/", views.showform, name="showform"),
+    path("getform/", views.getform, name='getform'),
 ] 
